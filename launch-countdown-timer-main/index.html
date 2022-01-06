@@ -12,7 +12,23 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-  
+     @media screen and (min-width: 375px) {
+      body{
+          font-family:'Red Hat Text', sans-serif; 
+          font-size:1rem; 
+          font-weight:700;
+          background-color:hsl(235, 16%, 14%); 
+      } 
+      h1{text-align:center; color:hsl(0, 0%, 100%)}
+      h2{width:100px; height:100px; border-radius:10px; background:red;}
+      main{display:flex; justify-content:space-evenly; align-items:center;} 
+      h3{text-align:center; color:hsl(237, 18%, 59%)}
+      footer{position:fixed; bottom:0; width:100%;}
+      .footer-wrapper{position:relative; z-index:1;}
+      .footer-image{position:absolute; z-index:2; bottom:0; width:100vw;}
+      .attribution {position:absolute; z-index:3; left:30px; bottom:30px; color:hsl(237, 18%, 59%); font-size:11px; text-align:center; }
+      .attribution a {color:white }
+  }
   </style>
 </head>
 
