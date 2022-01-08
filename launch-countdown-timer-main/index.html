@@ -14,6 +14,11 @@
   <style>
      @media screen and (min-width: 375px) {
       body{
+          box-sizing:border-box;
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          align-items:center;
           font-family:'Red Hat Text', sans-serif; 
           font-size:1rem; 
           font-weight:700;
@@ -21,12 +26,19 @@
           background-image:url("./images/bg-stars.svg")
       } 
       h1{text-align:center; color:hsl(0, 0%, 100%)}
-      h2{width:100px; height:100px; border-radius:10px; background:hsl(236, 21%, 26%);}
+      h2{width:100px; height:100px; border-radius:10px; margin: 10px; background:hsl(236, 21%, 26%);}
       main{display:flex; justify-content:space-evenly; align-items:center;} 
       h3{text-align:center; color:hsl(237, 18%, 59%)}
-      footer{position:fixed; bottom:0; width:100%;}
-      .footer-wrapper{position:relative; z-index:1;}
-      .footer-image{position:absolute; z-index:2; bottom:0; width:100vw;}
+      footer{
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          width: 100%;
+          min-height: 12rem;
+          position: fixed;
+          bottom: 0;
+          background: url(./images/pattern-hills.svg) no-repeat;
+          background-size: cover;}
       .attribution {position:absolute; z-index:3; left:30px; bottom:30px; color:hsl(237, 18%, 59%); font-size:11px; text-align:center; }
       .attribution a {color:white }
   }
@@ -58,18 +70,15 @@
   </main>
   
   <footer>
-    <div class="footer-wrapper">
-      <img class="footer-image" src="./images/pattern-hills.svg" alt="slides">
       <div class="footer-icon">
-        <img src="./images/icon-facebook.svg" alt="">
-        <img src="./images/icon-pinterest.svg" alt="">
-        <img src="./images/icon-instagram.svg" alt="">
+        <span class="icon icon-facebook"></span>
+        <span class="icon icon-pinterest"></span>
+        <span class="icon icon-instagram"></span>
       </div>
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="#">Cho-rong Lee</a>.
       </div>
-    </div>
   </footer>
   
   
